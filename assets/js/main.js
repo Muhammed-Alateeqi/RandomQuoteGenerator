@@ -60,13 +60,9 @@ var quotes = [
   },
 ];
     let random;
-console.log(random)
 function getRandomQuote(){
     let prevNumber = random;
-    console.log(prevNumber)
     random = Number(parseInt(Math.random()*quotes.length))// 10
-    console.log(random)
-
     while(random === prevNumber){
         random = Number(parseInt(Math.random()*quotes.length))
     }

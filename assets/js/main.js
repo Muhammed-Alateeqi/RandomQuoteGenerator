@@ -59,9 +59,18 @@ var quotes = [
    'quote': 'The best way to predict the future is to invent it.'
   },
 ];
-
+    let random;
+console.log(random)
 function getRandomQuote(){
-    var random = Number.parseInt(Math.random()*quotes.length);
+    let prevNumber = random;
+    console.log(prevNumber)
+    random = Number(parseInt(Math.random()*quotes.length))// 10
+    console.log(random)
+
+    while(random === prevNumber){
+        random = Number(parseInt(Math.random()*quotes.length))
+    }
     document.getElementById('quoteOutput').innerHTML = `“${quotes[random].quote}”`;
     document.getElementById('authorOutput').innerHTML = `-${quotes[random].author}`;
 }
+

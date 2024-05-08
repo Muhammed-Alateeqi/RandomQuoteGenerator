@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+}
+.landing {
+  background-image: url(./../images/darweesh.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-block {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  padding: 100px 20px;
+}
+
+.main-title h1 {
+  font-size: 3rem;
+}
+.main-title p {
+  font-size: 22px;
+}
+
+
+@media (max-width:640px){
+    .main-block{
+        width: 80%;
+    }
+}
